@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+      integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+    <link rel="stylesheet" href="./orderDetails.css" />
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
+     <!-- Pramod Jacob Sam
+    Student ID 8855432  -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-bar">
+          <a class="logo" href="../index.html">
+            <img height="100" />
+          </a>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <img src="../Images/empty-cart.png" height="30" /><a href="../index.html#tabs"
+                  >Order Your Pizza</a
+                >
+              </li>
+              <li><a href="../OrderDetails/orderDetails.html">Order Details</a></li>
+              <li class="signin">
+                <i class="fa-solid fa-user"></i
+                ><a href="./SignIn/signIn.html">&nbsp;Sign/LogIn</a>
+              </li>
+              <li class="logout">
+                <i class="fa-solid fa-user"></i><a href="#">&nbsp;Logout</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <article class="orderSummary">
+        <div class="orderSummary__heading">
+          <img src="/images/cart-black.png" alt="" />
+          <h1>Order Details</h1>
+        </div>
+
+        <!-- Accordian -->
+        <div id="accordion">
+          <h3>Items</h3>
+          <section class="accordian__container">
+            <!-- Start of Single Item -->
+            <!-- <div class="accordian__item">
+              <div class="accordian__item--single">
+                <h3 class="accordian__item--heading">Pepperoni Pizza</h3>
+                <div class="accordian__item--container">
+                  <div class="accordian__item--options">
+                    <div>
+                      <h4>Size</h4>
+                      <div class="accordian__size">
+                        <div>
+                          <input
+                            type="radio"
+                            id="small"
+                            checked
+                            name="size"
+                            data-item="1"
+                          />
+                          <label for="small">Small</label>
+                        </div>
+                        <div>
+                          <input
+                            type="radio"
+                            id="medium"
+                            name="size"
+                            data-item="1"
+                          />
+                          <label for="medium">Medium</label>
+                        </div>
+                        <div>
+                          <input
+                            type="radio"
+                            id="large"
+                            name="size"
+                            data-item="1"
+                          />
+                          <label for="large">Large</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Toppings</h4>
+                      <div class="accordian__toppings">
+                        <div>
+                          <label for="pepperoni">Pepperoni</label>
+                          <input
+                            type="checkbox"
+                            id="pepperoni"
+                            name="toppings"
+                            data-item="1"
+                          />
+                        </div>
+                        <div>
+                          <label for="chicken">Chicken</label>
+                          <input
+                            type="checkbox"
+                            id="chicken"
+                            name="toppings"
+                            data-item="1"
+                          />
+                        </div>
+                        <div>
+                          <label for="bellpepper">Bell Pepper</label>
+                          <input
+                            type="checkbox"
+                            id="bellpepper"
+                            name="toppings"
+                            data-item="1"
+                          />
+                        </div>
+                        <div>
+                          <label for="sausage">Sausage</label>
+                          <input
+                            type="checkbox"
+                            id="sausage"
+                            name="toppings"
+                            data-item="1"
+                          />
+                        </div>
+                        <div>
+                          <label for="onion">Onion</label>
+                          <input
+                            type="checkbox"
+                            id="onion"
+                            name="toppings"
+                            data-item="1"
+                          />
+                        </div>
+                        <div>
+                          <label for="mushroom">Mushroom</label>
+                          <input
+                            type="checkbox"
+                            id="mushroom"
+                            name="toppings"
+                            data-item="1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordian__second--col">
+                      <label for="quantity">Qty</label>
+                      <select name="quantity" id="quantity" data-item="1">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                    <div class="accordian__third--col" data-item="1">
+                      <img src="../Images/pizza.png" alt="item" />
+                      <h4>Price: <span>$50</span></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- End of Single Item -->
+          </section>
+
+          <h3>Personal Information</h3>
+          <section class="accordian-2">
+            <form>
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter Name" id="name" />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Email" id="email" />
+              </div>
+              <div class="form-control">
+                <label for="phone">Phone</label>
+                <input type="text" placeholder="Enter Phone" id="phone" />
+              </div>
+            </form>
+          </section>
+
+          <h3>Shipping Address</h3>
+          <section class="accordian-3">
+            <form>
+              <div class="form-control">
+                <label for="address">Address</label>
+                <input type="text" placeholder="Enter address" id="address" />
+              </div>
+              <div class="form-control">
+                <label for="city">City</label>
+                <input type="text" placeholder="Enter city" id="city" />
+              </div>
+              <div class="form-control">
+                <label for="province">Province</label>
+                <input type="text" placeholder="Enter province" id="province" />
+              </div>
+              <div class="form-control">
+                <label for="zipcode">Zipcode</label>
+                <input type="text" placeholder="Enter zipcode" id="zipcode" />
+              </div>
+            </form>
+          </section>
+
+          <h3>Payment Details</h3>
+          <section class="accordian-4">
+            <div>
+              <div class="accordian-4--form">
+                <div class="accordian-4--form__radio">
+                  <div for="card">Card</div>
+                  <div class="form-control-radio">
+                    <div>
+                      <input type="radio" id="visa" name="card" checked />
+                      <label for="visa">Visa</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="mastercard" name="card" />
+                      <label for="mastercard">Mastercard</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="maestro" name="card" />
+                      <label for="maestro">Maestro</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="cardNumber">Card Number</label>
+                  <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="xxxx-xxxx-xxxx"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="cardExpiry">Expiry</label>
+                  <input type="text" id="cardExpiry" placeholder="MM/YYYY" />
+                </div>
+                <div class="form-control">
+                  <label for="cardCvv">CVV</label>
+                  <input
+                    type="password"
+                    id="cardCvv"
+                    maxlength="3"
+                    placeholder="***"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Total -->
+        <section class="orderdecision">
+          <div>
+            <h2 class="orderdecision__total">Total: <span>$80</span></h2>
+            <h2>Delivery: <span>$2</span></h2>
+            <h2 class="orderdecision__tax">Tax: <span>$2</span></h2>
+            <hr />
+            <h2 class="orderdecision__netTotal">Net Total: <span>$88</span></h2>
+            <button>
+              Place Order &nbsp;<i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./gallery/gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="#">Order Details</a>
+        </li>
+        <li>
+          <a href="#">Sign/Reservation</a>
+        </li>
+        <li>
+          <a href="#">Privacy & Policy</a>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; Pizza Store 2022</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"
+      integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      $(function () {
+        $("#accordion").accordion({
+          active: 0,
+          heightStyle: "content",
+        });
+      });
+    </script>
+    <script src="../modules/isSignedIn.js"></script>
+    <script src="../modules/signinLogout.js"></script>
+    <script src="./orderDetails.js"></script>
+  </body>
+</html>

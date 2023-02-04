@@ -1,0 +1,46 @@
+/* Ricardo Parra
+Student ID 8808044 */
+
+main {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+#detail_info_order {
+  display: flex;
+  justify-content: space-between;
+}
+#info_pizza {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+#info_payment {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.detail_pizza {
+  display: block;
+  align-items: center;
+  margin-top: 3rem;
+}
+.info_payment_left {
+  text-align: left;
+}
+.info_payment_right {
+  text-align: center;
+}
+hr {
+  margin: 1rem 0;
+}
+@media all and (max-width: 760px) {
+  .detail_pizza {
+    padding-left: 1rem;
+  }
+  main {
+    font-size: 1rem;
+  }
+  #detail_info_order div {
+    padding-left: 1rem;
+  }
+}

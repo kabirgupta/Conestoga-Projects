@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza Store</title>
+
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico" />
+    <!-- Ricardo Parra
+    Student ID 8808044  -->
+    <link rel="stylesheet" type="text/css" href="order_summary.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-bar">
+          <a class="logo" href="../index.html">
+            <img height="100" />
+          </a>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <img src="../Images/empty-cart.png" height="30" /><a
+                  href="#tabs"
+                  >Order Your Pizza</a
+                >
+              </li>
+              <li>
+                <a href="../OrderDetails/orderDetails.html">Order Details</a>
+              </li>
+              <li class="signin">
+                <i class="fa-solid fa-user"></i
+                ><a href="./SignIn/signIn.html">&nbsp;Sign/LogIn</a>
+              </li>
+              <li class="logout">
+                <i class="fa-solid fa-user"></i><a href="#">&nbsp;Logout</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Ricardo -->
+    <main>
+      <div>
+        <h2>Your order has been confirmed and will be delivered soon.</h2>
+      </div>
+      <hr />
+      <div id="detail_info_order">
+        <div>
+          <h3>Order date</h3>
+          <p id="order_date"></p>
+        </div>
+        <div>
+          <h3>Order ID</h3>
+          <p id="order_id"></p>
+        </div>
+      </div>
+      <hr />
+      <div id="info_pizza">
+        <div><img src="../Images/hero-pizza.png" height="100" /></div>
+        <div class="detail_pizza">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="detail_pizza">
+          <p></p>
+          <p></p>
+        </div>
+        <div class="detail_pizza"><p></p></div>
+      </div>
+      <hr />
+      <div id="info_payment">
+        <div class="info_payment_left">Total</div>
+        <div class="info_payment_right" id="subtotal"></div>
+        <div class="info_payment_left">Delivery</div>
+        <div class="info_payment_right" id="shipping"></div>
+        <div class="info_payment_left">Taxes</div>
+        <div class="info_payment_right" id="taxes"></div>
+        <div class="info_payment_left">Net Total</div>
+        <div class="info_payment_right" id="total"></div>
+      </div>
+      <hr />
+      <div>
+        <p>We appreciate your order, and hope you enjoy the pizza.</p>
+      </div>
+    </main>
+    <!-- RICARDO -->
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./gallery/gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="#">Order Details</a>
+        </li>
+        <li>
+          <a href="#">Sign/Reservation</a>
+        </li>
+        <li>
+          <a href="#">Privacy & Policy</a>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; Pizza Store 2022</p>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <!-- NEW PLUGIN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../modules/isSignedIn.js"></script>
+    <script src="../modules/signinLogout.js"></script>
+    <script src="order_summary.js"></script>
+  </body>
+</html>

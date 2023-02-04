@@ -1,0 +1,180 @@
+/* Ricardo Parra
+Student ID 8808044 */
+
+h2 {
+  margin-top: 20px;
+  /* background-color: #fe5f1e; */
+  margin-bottom: 10px;
+  text-align: center;
+}
+main {
+  margin: 0 auto;
+  width: 70%;
+}
+#main {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.column_1 {
+  margin-right: 5px;
+}
+.column_2 {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#form_register,
+#form_login {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#div_term {
+  display: flex;
+  justify-content: right;
+}
+#div_promo {
+  display: flex;
+  justify-content: right;
+}
+
+#tabs_list {
+  padding: 15px;
+  font-size: 20px;
+  /* color: transparent; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  /* background-color: #fe5f1e; */
+}
+
+#tabs_list li {
+  margin-right: 1rem;
+  background-color: orange;
+  border-radius: 2rem;
+  /*	padding: 1rem 3rem;*/
+}
+
+#tabs_list li:hover {
+  background: darkorange;
+}
+
+#tabs_list li a {
+  padding: 1rem 3rem;
+}
+
+#tabs_list li:hover a {
+  color: white;
+}
+
+#tabs_list li:visited a {
+  color: red;
+}
+
+#tabs1 p {
+  text-align: right;
+  font-size: 20px;
+  font-family: "georgia";
+}
+
+#tabs2 p {
+  padding: 30px;
+  text-align: right;
+  margin-right: 200px;
+  font-size: 20px;
+  font-family: "georgia";
+}
+
+label {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+#tabs_list li a {
+  display: inline-block;
+}
+
+/* Pizza image */
+#img_space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove color tabs */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: none;
+}
+/* Remove color tabs */
+.ui-widget-header,
+.ui-widget.ui-widget-content {
+  border: none;
+  background: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+#submit_signin,
+#submit_register,
+select,
+option {
+  padding: 8px 12px;
+  /* border-radius: 15px; */
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#form_thank {
+  margin: 0 auto;
+}
+#display_sigin {
+  color: red;
+}
+
+form span {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+/* Tablet view */
+@media all and (max-width: 1024px) {
+  #pizza_image {
+    height: 300px;
+  }
+}
+
+/* Mobile view */
+@media all and (max-width: 760px) {
+  #img_space {
+    display: none;
+  }
+  #form_register,
+  #form_login {
+    display: block;
+    text-align: center;
+  }
+  #div_term {
+    display: flex;
+    justify-content: center;
+  }
+  #div_promo {
+    display: flex;
+    justify-content: center;
+  }
+  .column_2 {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,583 @@
+/* Pramod Jacob Sam
+Student ID 8855432 */
+p {
+  color: black;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.orderSummary {
+  background-color: #f8f8f8;
+  padding: 5rem;
+}
+
+.orderSummary__heading {
+  display: flex;
+  align-items: center;
+}
+
+.orderSummary__heading h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+
+#accordion {
+  margin-top: 2rem;
+}
+
+#accordion input {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.accordian__size {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.accordian__item {
+  margin-bottom: 1rem;
+}
+
+.accordian__item--single {
+  padding: 1rem;
+  border: 2px solid darkgray;
+}
+
+.accordian__item--heading {
+  font-size: 2rem;
+}
+
+.accordian__item--options {
+  display: flex;
+}
+
+.accordian__item--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.accordian__item--container img {
+  width: 25vh;
+  object-fit: contain;
+}
+
+.ui-corner-top {
+  background-color: var(--lightOrange);
+  font-size: 2rem !important;
+}
+
+.ui-icon-triangle-1-e,
+.ui-icon-triangle-1-s {
+  margin-right: 1rem;
+}
+
+.accordian__third--col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.accordian__third--col h4 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.accordian__third--col span {
+  color: var(--lightOrange);
+}
+
+.accordian__second--col {
+  margin-right: 15rem;
+}
+
+.accordian__second--col label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.accordian__second--col select {
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 10rem;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  background-color: var(--lightOrange);
+  color: white;
+  border: 0.4rem solid var(--darkOrange);
+  outline: none;
+  border-radius: 0.5rem;
+  font-family: "FontAwesome";
+  background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='fa-chevron-down' class='svg-inline--fa fa-chevron-down fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='white' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: 3em 0.7rem;
+  vertical-align: center;
+  transition: all 0.2s ease;
+}
+
+.accordian__second--col select::-ms-expand {
+  display: none;
+}
+
+.accordian__second--col select:hover {
+  border: 0.4rem solid var(--lightOrange);
+}
+
+.accordian__size > div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.accordian__size > div > label {
+  margin-right: 1rem;
+}
+
+.accordian__size input[type="radio"] {
+  display: none;
+}
+
+.accordian__size label {
+  position: relative;
+  border: 2px solid var(--lightOrange);
+  border-radius: 0.5rem;
+  padding: 0.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  min-width: 14rem;
+}
+
+.accordian__size label:before {
+  /* position: absolute; */
+  content: "";
+  height: 0.8rem;
+  width: 0.8rem;
+  border: 0.3rem solid var(--lightOrange);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.accordian__size input[type="radio"]:checked + label {
+  background-color: var(--lightOrange);
+  color: white;
+}
+
+.accordian__size input[type="radio"]:checked + label::before {
+  height: 0.4rem;
+  width: 0.4rem;
+  border: 0.8rem solid white;
+}
+
+.accordian__toppings {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+.accordian__toppings > div {
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  background-color: var(--lightOrange);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+}
+
+.accordian__toppings > div:hover {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.accordian__toppings > div label {
+  margin-right: 1rem;
+}
+
+.accordian__toppings input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  /* background-color: #d5d5d5; */
+  background-color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.accordian__toppings input[type="checkbox"]:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-right: 0.45rem;
+  align-self: center;
+  color: var(--darkOrange);
+  display: none;
+}
+
+.accordian__toppings > div:has(input[type="checkbox"]:checked) {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.accordian__toppings input[type="checkbox"]:checked:after {
+  display: inline;
+}
+
+.orderdecision {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.orderdecision h2 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.orderdecision span {
+  color: var(--lightOrange);
+}
+
+.orderdecision button {
+  background-color: var(--lightOrange);
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid var(--darkOrange);
+  color: white;
+  font-size: 2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  align-self: flex-end;
+}
+
+.orderdecision button:hover {
+  background-color: var(--darkOrange);
+  border: 2px solid var(--lightOrange);
+}
+
+.accordian-4 {
+  overflow-y: hidden;
+}
+
+/* To be changed */
+.accordian-4--form {
+  width: 30%;
+}
+
+.accordian-4--form__radio,
+.accordian-4 .form-control > label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.accordian-4 .form-control input,
+.accordian-4 .form-control label {
+  margin-top: 2rem;
+}
+
+.accordian-4 .form-control input::placeholder {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.accordian-4 .form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .form-control-radio {
+  display: flex;
+} */
+
+.form-control-radio > div {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.accordian-4 .form-control-radio > label {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.accordian-4 .form-control-radio > input {
+  margin-right: 2rem;
+}
+
+.form-control-radio input[type="radio"] {
+  display: none;
+}
+
+.form-control-radio label {
+  position: relative;
+  border: 2px solid var(--lightOrange);
+  border-radius: 0.5rem;
+  padding: 0.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-control-radio label::before {
+  /* position: absolute; */
+  content: "";
+  height: 0.8rem;
+  width: 0.8rem;
+  border: 0.4rem solid var(--lightOrange);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.form-control-radio input[type="radio"]:checked + label {
+  background-color: var(--lightOrange);
+  color: white;
+}
+
+.form-control-radio input[type="radio"]:checked + label::before {
+  height: 0.4rem;
+  width: 0.4rem;
+  border: 0.8rem solid white;
+}
+
+.accordian-4 .form-control input {
+  width: 20rem;
+  height: 4rem;
+}
+
+.accordian-3 form {
+  width: 30%;
+}
+
+.accordian-3 .form-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordian-3 .form-control label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.accordian-3 .form-control input,
+.accordian-3 .form-control label {
+  margin-top: 2rem;
+}
+
+.accordian-3 .form-control input {
+  width: 20rem;
+  height: 4rem;
+}
+
+.accordian-3 .form-control input::placeholder {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.accordian-2 form {
+  width: 30%;
+}
+
+.accordian-2 .form-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordian-2 .form-control label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.accordian-2 .form-control input,
+.accordian-2 .form-control label {
+  margin-top: 2rem;
+}
+
+.accordian-2 .form-control input {
+  width: 20rem;
+  height: 4rem;
+}
+
+.accordian-2 .form-control input::placeholder {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+@media screen and (max-width: 1000px) {
+  .accordian-2 form,
+  .accordian-3 form,
+  .accordian-4--form {
+    min-width: 60%;
+  }
+
+  .accordian__item--options {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accordian__size {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordian__toppings {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordian__second--col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .accordian-2 form,
+  .accordian-3 form,
+  .accordian-4--form {
+    min-width: 60%;
+  }
+
+  .accordian__item--options {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accordian__size {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordian__toppings {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordian__second--col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accordian-2 form,
+  .accordian-3 form,
+  .accordian-4--form {
+    min-width: 100%;
+  }
+
+  .accordian__item--options {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accordian__size {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordian__toppings {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordian__second--col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.accordian__second--col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.accordian__second--col button {
+  background-color: transparent;
+  color: #ef5350;
+  border: 3px solid #c62828;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  align-self: stretch;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accordian__second--col button:hover {
+  background-color: #c62828;
+  color: white;
+  border: 3px solid #ef5350;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.orderSummary__noItem {
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderSummary__noItem i {
+  font-size: 25vh;
+}
+
+.orderSummary__noItem p {
+  font-size: 5rem;
+  margin-top: 5rem;
+}

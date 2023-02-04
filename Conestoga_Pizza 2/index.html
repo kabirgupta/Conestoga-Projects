@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+      integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+    <!-- Pramod Jacob Sam
+    Student ID 8855432  -->
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="./OrderDetails/orderDetails.html" class="shopping-icon-parent">
+          <i class="fa-solid fa-basket-shopping shopping-icon-parent__main"
+            ><span>5</span></i
+          >
+        </a>
+      </div>
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="index.html"> <img height="100" /> </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <img src="Images/empty-cart.png" height="30" /><a href="#tabs"
+                  >Order Your Pizza</a
+                >
+              </li>
+              <li>
+                <a href="./OrderDetails/orderDetails.html">Order Details</a>
+              </li>
+              <li class="signin">
+                <i class="fa-solid fa-user"></i
+                ><a href="./SignIn/signIn.html">&nbsp;Sign/LogIn</a>
+              </li>
+              <li class="logout">
+                <i class="fa-solid fa-user"></i><a href="#">&nbsp;Logout</a>
+              </li>
+              <li>
+                <a href="./OrderDetails/orderDetails.html">
+                  <i class="fa-solid fa-basket-shopping shopping-icon"
+                    ><span>5</span></i
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="banner">
+          <div>
+            <h1>50% OFF</h1>
+            <h2>On Christmas</h2>
+          </div>
+          <div class="countdown-container">
+            <div class="countdown-days">
+              <p>Days</p>
+              <div class="countdown-figure--container">
+                <div class="countdown-figure countdown-figure-1">0</div>
+                <div class="countdown-figure countdown-figure-2">0</div>
+                <div class="countdown-figure countdown-figure-3">0</div>
+              </div>
+            </div>
+            <div class="countdown-hours">
+              <p>Hour</p>
+              <div class="countdown-figure--container">
+                <div class="countdown-figure countdown-figure-1">0</div>
+                <div class="countdown-figure countdown-figure-2">0</div>
+              </div>
+            </div>
+            <div class="countdown-minutes">
+              <p>Minute</p>
+              <div class="countdown-figure--container">
+                <div class="countdown-figure countdown-figure-1">0</div>
+                <div class="countdown-figure countdown-figure-2">0</div>
+              </div>
+            </div>
+            <div class="countdown-seconds">
+              <p>Seconds</p>
+              <div class="countdown-figure--container">
+                <div class="countdown-figure countdown-figure-1">0</div>
+                <div class="countdown-figure countdown-figure-2">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <h1>“Pizza is not a Trend its a way of Life. ”</h1>
+            <p>
+              Welcome to the website!!<br />where we deliver fresh from ovens<br />Lets
+              delight you with our freash variety of Pizzas.
+            </p>
+            <a href="#tabs" class="btn">Explore &rarr;</a>
+          </div>
+          <div class="col-2 heroPizza__container">
+            <img src="Images/hero-pizza-1.png" class="heroPizza" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="blog">
+      <div class="blog-heading">
+        <h1>Pizza, Order</h1>
+        <h3>Know about your Pizza</h3>
+      </div>
+      <div id="tabs">
+        <ul id="tabs__list">
+          <li><a href="#tabs-1">All</a></li>
+          <li><a href="#tabs-2">Veg</a></li>
+          <li><a href="#tabs-3">Non-Veg</a></li>
+        </ul>
+        <div id="tabs-1" class="tabs-item">
+          <div data-item="1">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Jerked Chicken</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="2">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Meat Lovers</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="3">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Pepperoni</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="4">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Classic Chicken</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="5">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Gamberi</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="6">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Artichoke</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="7">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Caprese</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="8">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Veggie</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="9">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Zuchini</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="10">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Aragula</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="11">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Kale Pesto</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="12">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Fresh Tomato</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div id="tabs-2" class="tabs-item">
+          <div data-item="6">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Artichoke</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="7">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Caprese</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="8">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Veggie</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="9">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Zuchini</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="10">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Aragula</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="11">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Kale Pesto</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="12">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Fresh Tomato</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div id="tabs-3" class="tabs-item">
+          <div data-item="1">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Jerked Chicken</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="2">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Meat Lovers</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="3">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Pepperoni</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="4">
+            <img src="Images/piz1.png" height="300" />
+            <p class="name">Classic Chicken</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+          <div data-item="5">
+            <img src="Images/hero-pizza.png" height="300" />
+            <p class="name">Gamberi</p>
+            <div class="price-cart__container">
+              <p class="price">$5</p>
+              <button><span>+</span>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./gallery/gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="#">Order Details</a>
+        </li>
+        <li>
+          <a href="#">Sign/Reservation</a>
+        </li>
+        <li>
+          <a href="#">Privacy & Policy</a>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; Pizza Store 2022</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"
+      integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./modules/signinLogout.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

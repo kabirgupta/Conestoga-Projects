@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza Store</title>
+
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico" />
+    <!-- Ricardo Parra -->
+    <!-- Student ID 8808044 -->
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.r.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="index.html">
+              <img height="100" />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <img src="../Images/empty-cart.png" height="30" /><a
+                  href="#tabs"
+                  >Order Your Pizza</a
+                >
+              </li>
+              <li>
+                <a href="../OrderDetails/orderDetails.html">Order Details</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Ricardo -->
+    <h2>
+      An account makes ordering your meal even quicker and easier!<br />Please
+      sign in to an existing account or create a new one by following the links
+      below.
+    </h2>
+    <main>
+      <div id="main">
+        <div id="form_space">
+          <div id="tabs_s">
+            <ul id="tabs_list">
+              <li><a href="#tabs1">Create an Account</a></li>
+              <li><a href="#tabs2">Sign-In</a></li>
+            </ul>
+            <div id="tabs1">
+              <form
+                id="form_register"
+                action="response.html"
+                method="get"
+                name="form_register"
+              >
+                <div class="column_1"><label for="name">Name</label></div>
+                <div class="column_2">
+                  <input type="text" id="name" placeholder="Enter Name" /><span
+                    >*</span
+                  >
+                  <img src="" alt="" class="img_arrow" id="name_arrow" />
+                </div>
+                <div class="column_1">
+                  <label for="lastname">Lastname</label>
+                </div>
+                <div class="column_2">
+                  <input
+                    type="text"
+                    id="lastname"
+                    placeholder="Enter Lastname"
+                  /><span>*</span>
+                  <img src="" alt="" class="img_arrow" id="lastname_arrow" />
+                </div>
+                <div class="column_1"><label for="email">Email</label></div>
+                <div class="column_2">
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="Enter Email"
+                  /><span>*</span>
+                  <img src="" alt="" class="img_arrow" id="email_arrow" />
+                </div>
+                <div class="column_1">
+                  <label for="dof">Date of Birth</label>
+                </div>
+                <div class="column_2">
+                  <input type="date" id="dob" />
+                </div>
+                <div class="column_1"><label for="phone">Phone</label></div>
+                <div class="column_2">
+                  <input
+                    type="text"
+                    id="phone"
+                    placeholder="Enter Phone Number"
+                  />
+                </div>
+                <div class="column_1"><label for="address">Address</label></div>
+                <div class="column_2">
+                  <input type="text" id="address" placeholder="Enter Address" />
+                </div>
+                <div class="column_1">
+                  <label for="province">Province</label>
+                </div>
+                <div class="column_2"><select id="province"></select></div>
+                <div class="column_1"><label for="city">City</label></div>
+                <div class="column_2">
+                  <select id="city"></select
+                  ><span></span>
+                  <img src="" alt="" class="img_arrow" id="city_arrow" />
+                </div>
+                <div class="column_1">
+                  <label for="zipcode">Postal code</label>
+                </div>
+                <div class="column_2">
+                  <input
+                    type="text"
+                    id="zipcode"
+                    placeholder="A#A A#A"
+                    size="7"
+                  />
+                </div>
+                <div class="column_1">
+                  <label for="password">Password</label>
+                </div>
+                <div class="column_2">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                  /><span>*</span>
+                  <img src="" alt="" class="img_arrow" id="pwd_arrow" />
+                </div>
+                <div class="column_1">
+                  <label for="confirm_pwd">Confirm Password</label>
+                </div>
+                <div class="column_2">
+                  <input
+                    type="password"
+                    id="confirm_pwd"
+                    placeholder="Enter Password Again"
+                  /><span>*</span>
+                  <img src="" alt="" class="img_arrow" id="conpwd_arrow" />
+                </div>
+                <div class="column_1" id="div_term">
+                  <input type="checkbox" id="terms" />
+                </div>
+                <div class="column_2">
+                  <label for="terms">Terms and conditions</label
+                  ><span id="req_terms">*</span>
+                  <img src="" alt="" class="img_arrow" id="terms_arrow" />
+                </div>
+                <div class="column_1" id="div_promo">
+                  <input type="checkbox" id="promo" />
+                </div>
+                <div class="column_2">
+                  <label for="promo"
+                    >Send me information about promotions, contests and
+                    offers.</label
+                  >
+                </div>
+                <div class="column_1"></div>
+                <div class="column_2">
+                  <input
+                    type="submit"
+                    id="submit_register"
+                    value="Submit"
+                  /><span></span
+                  ><img src="" alt="" class="img_arrow" id="submit_arrow" />
+                </div>
+              </form>
+            </div>
+            <div id="tabs2">
+              <form
+                id="form_login"
+                action="response.html"
+                method="get"
+                name="form_log"
+              >
+                <div class="column_1">
+                  <label for="email_signin">Email</label>
+                </div>
+                <div class="column_2">
+                  <input
+                    type="email"
+                    id="email_signin"
+                    required
+                    placeholder="Enter Email"
+                  />
+                </div>
+                <div class="column_1">
+                  <label for="password_signin">Password</label>
+                </div>
+                <div class="column_2">
+                  <input
+                    type="password"
+                    id="password_signin"
+                    required
+                    placeholder="Enter Password"
+                  />
+                </div>
+                <div class="column_1"></div>
+                <div class="column_2">
+                  <input type="submit" id="submit_signin" value="Submit" />
+                </div>
+              </form>
+              <div id="display_error_sigin"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="img_space">
+          <img src="../Images/hero-pizza.png" height="400" id="pizza_image" />
+        </div>
+      </div>
+    </main>
+    <!-- Ricardo -->
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./gallery/gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="#">Order Details</a>
+        </li>
+        <li>
+          <a href="#">Sign/Reservation</a>
+        </li>
+        <li>
+          <a href="#">Privacy & Policy</a>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
+      <p class="copyright">&copy; Pizza Store 2022</p>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <!-- NEW PLUGIN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="data_province.js"></script>
+    <script src="../modules/isSignedIn.js"></script>
+    <script src="script.r.js"></script>
+  </body>
+</html>
